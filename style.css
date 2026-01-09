@@ -23,17 +23,17 @@ body {
   background-color: var(--violet);
   color: var(--white);
   text-align: center;
-  padding: 5.5rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 .logo {
-  width: 160px; /* ⬅️ bigger and clearly visible */
-  margin-bottom: 2rem;
+  width: 110px;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-  font-size: 2.3rem;
-  margin-bottom: 0.6rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero p {
@@ -42,8 +42,8 @@ body {
 
 .cta {
   display: inline-block;
-  margin-top: 2rem;
-  padding: 0.85rem 2.2rem;
+  margin-top: 1.8rem;
+  padding: 0.8rem 2rem;
   background-color: var(--mint);
   color: #000;
   text-decoration: none;
@@ -51,7 +51,7 @@ body {
   font-weight: bold;
 }
 
-/* STRIPS */
+/* STRIPS (ALTERNATION SYSTEM) */
 .strip {
   padding: 4rem 1.5rem;
 }
@@ -153,17 +153,8 @@ blockquote span {
 /* FOOTER */
 .footer {
   background: #111;
-  padding: 3rem 1rem;
-}
-
-.academic-disclaimer {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.2rem 1.5rem;
-  border: 1px solid #333;
-  border-radius: 8px;
-  color: #ccc;
-  font-size: 0.85rem;
+  color: #aaa;
   text-align: center;
-  line-height: 1.5;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
 }
