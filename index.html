@@ -4,17 +4,41 @@
   <meta charset="UTF-8">
   <title>Sinapsis Digital – Gamificación educativa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Prototipo académico: Gamificación educativa para principiantes – Sinapsis Digital.">
+  <meta name="description" content="Formación práctica, accesible y basada en misiones para docentes con poco tiempo. Proyecto académico UOC.">
+  
+  <meta property="og:title" content="Sinapsis Digital | Gamificación para Docentes">
+  <meta property="og:description" content="¿Alumnos desconectados? Aprende a gamificar tu aula en 5 misiones. Sin teoría densa.">
+  <meta property="og:image" content="images/social-preview.jpg"> <meta property="og:url" content="https://gallardomarcoec-dev.github.io/sinapsis-digital/">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* Ratio 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Menú principal">
     <div class="nav-inner">
       <div class="brand">
-        <img src="images/logo-sinapsis.png" alt="Sinapsis Digital">
+        <img src="images/logo-sinapsis.png" alt="Logotipo Sinapsis Digital" onerror="this.style.display='none'">
         <span>Sinapsis Digital</span>
       </div>
 
@@ -28,7 +52,6 @@
     </div>
   </nav>
 
-  <!-- HOME -->
   <header id="home" class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
@@ -41,27 +64,28 @@
         </div>
 
         <p class="disclaimer">
-          Prototipo académico desarrollado en el marco del Máster Universitario en Educación y TIC (e-learning). Sin fines comerciales.
+          ⚠️ <strong>Aviso:</strong> Prototipo académico desarrollado en el marco del Máster Universitario en Educación y TIC (e-learning). Sin fines comerciales.
         </p>
       </div>
 
       <div class="hero-media">
         <div class="teaser">
-          <div class="teaser-header">
-            <span>Vídeo teaser</span>
-            <span class="tag">45s</span>
-          </div>
-          <p class="teaser-note">
-            Sustituir este bloque por un embed (YouTube/Vimeo) o un vídeo alojado.  
-            Para la entrega académica, este placeholder es aceptable si el vídeo final no está disponible.
-          </p>
-          <a class="teaser-cta" href="#curso">Ir al roadmap del curso</a>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1" 
+                        title="Teaser Sinapsis Digital" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                
+                </div>
+            <div style="margin-top: 10px; text-align: center;">
+                 <a class="teaser-cta" href="#curso">👇 Comienza tu Misión 0</a>
+            </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- EQUIPO -->
   <section id="equipo" class="section section-dark">
     <div class="container">
       <h2>El equipo</h2>
@@ -71,33 +95,32 @@
 
       <div class="team-grid">
         <article class="team-card">
-          <img src="images/sebastian.jpg" alt="Sebastian Gallardo">
+          <img src="images/sebastian.jpg" alt="Sebastian Gallardo" loading="lazy">
           <h3>Sebastian Gallardo</h3>
           <p class="role">Dirección del Proyecto</p>
         </article>
 
         <article class="team-card">
-          <img src="images/ana.jpg" alt="Ana Blanca Fernández">
+          <img src="images/ana.jpg" alt="Ana Blanca Fernández" loading="lazy">
           <h3>Ana Blanca Fernández</h3>
-          <p class="role">Gestión de Plataformas, Seguimiento y Evaluación Estratégica</p>
+          <p class="role">Gestión de Plataformas y Evaluación</p>
         </article>
 
         <article class="team-card">
-          <img src="images/juliana.jpg" alt="Juliana Bonilla">
+          <img src="images/juliana.jpg" alt="Juliana Bonilla" loading="lazy">
           <h3>Juliana Bonilla</h3>
-          <p class="role">Diseño Gráfico, Multimedia y Desarrollo Interactivo</p>
+          <p class="role">Diseño Gráfico y Multimedia</p>
         </article>
 
         <article class="team-card">
-          <img src="images/irene.jpg" alt="Irene Gallardo">
+          <img src="images/irene.jpg" alt="Irene Gallardo" loading="lazy">
           <h3>Irene Gallardo</h3>
-          <p class="role">Metodologías Activas y Diseño Tecnopedagógico</p>
+          <p class="role">Metodologías Activas</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- PROYECTO -->
   <section id="proyecto" class="section section-light">
     <div class="container">
       <h2>El proyecto</h2>
@@ -139,7 +162,6 @@
     </div>
   </section>
 
-  <!-- CURSO -->
   <section id="curso" class="section section-dark">
     <div class="container">
       <h2>El curso</h2>
@@ -218,7 +240,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIOS -->
   <section id="testimonios" class="section section-light">
     <div class="container">
       <h2>Testimonios</h2>
@@ -260,12 +281,11 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <img src="images/logo-uoc.png" alt="Universitat Oberta de Catalunya" class="footer-logo">
       <p>
-        Prototipo académico desarrollado en el marco del Máster Universitario en Educación y TIC (e-learning).  
+        Prototipo académico desarrollado en el marco del Máster Universitario en Educación y TIC (e-learning).
         Sin fines comerciales.
       </p>
     </div>
