@@ -1,29 +1,314 @@
-<footer class="footer">
-    <div class="container footer-inner">
-      
-      <div class="contact-info" style="margin-bottom: 1.5rem; opacity: 0.9;">
-        <p style="margin-bottom: 0.5rem;">
-            📧 <a href="mailto:hola@sinapsisdigital.com" style="color: white; text-decoration: none;">hola@sinapsisdigital.com</a>
-        </p>
-        <p>
-            📞 <a href="tel:+34600123456" style="color: white; text-decoration: none;">+34 600 123 456</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sinapsis Digital – Gamificación educativa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formación práctica, accesible y basada en misiones para docentes con poco tiempo. Proyecto académico UOC.">
+  
+  <meta property="og:title" content="Sinapsis Digital | Gamificación para Docentes">
+  <meta property="og:description" content="¿Alumnos desconectados? Aprende a gamificar tu aula en 5 misiones. Sin teoría densa.">
+  <meta property="og:image" content="images/social-preview.jpg"> 
+  <meta property="og:url" content="https://gallardomarcoec-dev.github.io/sinapsis-digital/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .video-wrapper {
+      position: relative;
+      /* UPDATED RATIO FOR SHORTS (9:16 Portrait) */
+      padding-bottom: 177.78%; 
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      background: #000; /* Black background while loading */
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    /* Optional: limit height on larger screens so the portrait video doesn't get too huge */
+     @media (min-width: 981px) {
+        .teaser { max-width: 350px; margin: 0 auto; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav" aria-label="Menú principal">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="images/logo-sinapsis.png" alt="Logotipo Sinapsis Digital" onerror="this.style.display='none'">
+        <span>Sinapsis Digital</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#proyecto">Proyecto</a>
+        <a href="#curso">Curso</a>
+        <a href="#testimonios">Testimonios</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Gamificación educativa para principiantes</h1>
+        <p class="lead">Formación práctica, accesible y basada en misiones para docentes con poco tiempo.</p>
+
+        <div class="hero-actions">
+          <a class="cta" href="#curso">Explorar el curso</a>
+          <a class="cta ghost" href="#proyecto">Ver la solución</a>
+        </div>
+
+        <p class="disclaimer">
+          ⚠️ <strong>Aviso:</strong> Prototipo académico desarrollado en el marco del Máster Universitario en Educación y TIC (e-learning). Sin fines comerciales.
         </p>
       </div>
 
+      <div class="hero-media">
+        <div class="teaser">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/g2E0aHObUBE?rel=0&modestbranding=1&playsinline=1&loop=1&playlist=g2E0aHObUBE" 
+                        title="Teaser Sinapsis Digital - Misión 0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div style="margin-top: 15px; text-align: center;">
+                 <a class="teaser-cta" href="#curso">👇 Comienza tu Misión 0</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="equipo" class="section section-dark">
+    <div class="container">
+      <h2>El equipo</h2>
+      <p class="section-intro">
+        Un equipo multidisciplinar que integra dirección de proyecto, diseño tecnopedagógico, multimedia y gestión de plataformas.
+      </p>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <img src="images/sebastian.jpg" alt="Sebastian Gallardo" loading="lazy">
+          <h3>Sebastian Gallardo</h3>
+          <p class="role">Dirección del Proyecto</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/ana.jpg" alt="Ana Blanca Fernández" loading="lazy">
+          <h3>Ana Blanca Fernández</h3>
+          <p class="role">Gestión de Plataformas y Evaluación</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/juliana.jpg" alt="Juliana Bonilla" loading="lazy">
+          <h3>Juliana Bonilla</h3>
+          <p class="role">Diseño Gráfico y Multimedia</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/irene.jpg" alt="Irene Gallardo" loading="lazy">
+          <h3>Irene Gallardo</h3>
+          <p class="role">Metodologías Activas</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyecto" class="section section-light">
+    <div class="container">
+      <h2>El proyecto</h2>
+      <p class="section-intro">
+        La propuesta responde a la desconexión del alumnado y a la sobrecarga docente mediante una ruta gamificada, breve y aplicable.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Problema</h3>
+          <p>Desmotivación, fatiga digital y falta de tiempo para diseñar experiencias activas de forma sostenible.</p>
+          <ul>
+            <li>Ansiedad digital</li>
+            <li>Escasez de tiempo</li>
+            <li>Recursos dispersos</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Solución</h3>
+          <p>Microlearning gamificado con misiones, evidencias progresivas y orientación a la implementación en el aula.</p>
+          <ul>
+            <li>Misiones y progreso</li>
+            <li>Plantillas reutilizables</li>
+            <li>Transferencia inmediata</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Evidencia académica</h3>
+          <p>El prototipo permite justificar decisiones pedagógicas y de UX con marcos como ADDIE y principios de accesibilidad.</p>
+          <ul>
+            <li>Análisis y diseño coherentes</li>
+            <li>Isomorfismo pedagógico</li>
+            <li>Evaluación visible</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="curso" class="section section-dark">
+    <div class="container">
+      <h2>El curso</h2>
+      <p class="section-intro">
+        Una ruta de 5 misiones desde “Novato” hasta “Master”, orientada a la práctica y con accesibilidad integrada (DUA).
+      </p>
+
+      <div class="roadmap">
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 1</span>
+            <span class="level">Novato</span>
+          </div>
+          <h3>Fundamentos</h3>
+          <p>Comprender gamificación educativa sin complicaciones: objetivos, mecánicas y errores comunes.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 2</span>
+            <span class="level">Aprendiz</span>
+          </div>
+          <h3>Casos reales</h3>
+          <p>Analizar ejemplos breves y extraer patrones transferibles para el aula y la evaluación.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 3</span>
+            <span class="level">Diseñador</span>
+          </div>
+          <h3>Diseño de retos</h3>
+          <p>Convertir resultados de aprendizaje en misiones claras, con evidencias y retroalimentación.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 4</span>
+            <span class="level">Implementador</span>
+          </div>
+          <h3>Implementación</h3>
+          <p>Aplicar el diseño en el aula con una estructura realista, ajustable y sostenible.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 5</span>
+            <span class="level">Master</span>
+          </div>
+          <h3>Evaluación y transferencia</h3>
+          <p>Medir impacto, capturar evidencias y planificar la mejora continua sin aumentar la carga docente.</p>
+        </article>
+      </div>
+
+      <div class="dua">
+        <h3>DUA en el producto (no como checklist)</h3>
+        <div class="dua-grid">
+          <div class="dua-item">
+            <h4>Acceso flexible</h4>
+            <p>Microcontenidos y navegación simple, mobile-first y compatible con plataformas ligeras.</p>
+          </div>
+          <div class="dua-item">
+            <h4>Percepción</h4>
+            <p>Subtítulos, transcripciones y diseño de alto contraste para mejorar la comprensión.</p>
+          </div>
+          <div class="dua-item">
+            <h4>Acción y expresión</h4>
+            <p>Plantillas, ejemplos y opciones de entrega que permiten diferentes formas de demostrar aprendizaje.</p>
+          </div>
+          <div class="dua-item">
+            <h4>Motivación</h4>
+            <p>Misiones, progreso y recompensas simbólicas para sostener el compromiso con poco tiempo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="section section-light">
+    <div class="container">
+      <h2>Testimonios</h2>
+      <p class="section-intro">
+        Evidencias simuladas para ilustrar el tipo de impacto esperado y la transferencia a la práctica docente.
+      </p>
+
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-number">85%</span>
+          <span class="metric-label">Objetivo de finalización</span>
+        </div>
+        <div class="metric">
+          <span class="metric-number">5</span>
+          <span class="metric-label">Misiones breves</span>
+        </div>
+        <div class="metric">
+          <span class="metric-number">15–20 min</span>
+          <span class="metric-label">Tiempo por micro-misión</span>
+        </div>
+      </div>
+
+      <div class="quotes">
+        <article class="quote">
+          <p>“La estructura por misiones me permitió implementar gamificación sin sentirme desbordada.”</p>
+          <span>Docente de secundaria</span>
+        </article>
+
+        <article class="quote">
+          <p>“Lo mejor es que no exige herramientas complejas. En una semana ya tenía un reto listo.”</p>
+          <span>Profesora de formación profesional</span>
+        </article>
+
+        <article class="quote">
+          <p>“El enfoque DUA se nota en la práctica: opciones claras, ritmo flexible y material reutilizable.”</p>
+          <span>Docente de primaria</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      
       <div class="social-links">
+          
           <a href="https://www.facebook.com/profile.php?id=61586176115361" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
+
           <a href="https://x.com/SinapsisD_UOC" target="_blank" aria-label="X (Twitter)" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
           </a>
+
           <a href="https://www.linkedin.com/company/sinapsis-digital-uoc" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           </a>
+          
           <a href="https://www.instagram.com/sinap_sisd/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.148 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.26-.148-4.771-1.692-4.919-4.919-.059-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.148-3.204 1.691-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.073-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-           <a href="https://www.youtube.com/@SinapsisDigital-d1w" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
+          
+          <a href="https://www.youtube.com/@SinapsisDigital-d1w" target="_blank" aria-label="YouTube" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
       </div>
@@ -35,3 +320,6 @@
       </p>
     </div>
   </footer>
+
+</body>
+</html>
