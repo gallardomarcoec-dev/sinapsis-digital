@@ -222,7 +222,7 @@ body {
   margin: 0.25rem 0;
 }
 
-/* --- ORGANIGRAM / TEAM STYLES --- */
+/* --- ORGANIGRAM / TEAM STYLES (UPDATED) --- */
 .organigram {
   display: flex;
   flex-direction: column;
@@ -248,15 +248,16 @@ body {
   margin: 0 auto;
 }
 
-/* Contact Info Styling */
+/* Contact Info Styling - FIXED to tuck under name */
 .director-contact {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 0.9rem;
+  margin-top: 5px; /* Minimal space */
+  padding-top: 0;
+  border-top: none; /* Removed border */
+  font-size: 0.85rem;
   color: var(--white);
-  font-weight: bold;
-  line-height: 1.8;
+  opacity: 0.9;
+  line-height: 1.4;
+  font-weight: normal;
 }
 
 /* Visual Connector Line */
@@ -264,7 +265,7 @@ body {
   width: 2px;
   height: 2rem;
   background: rgba(255, 255, 255, 0.3);
-  margin-top: 1rem;
+  margin-top: 0.5rem; /* Reduced to bring line closer */
   position: absolute;
   bottom: -2rem;
   left: 50%;
