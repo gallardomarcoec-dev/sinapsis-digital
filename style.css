@@ -113,9 +113,16 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 2.2rem;
+  /* CHANGED: Equal 1:1 columns and centering to fix the gap */
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   align-items: center;
+}
+
+/* Ensure content on right is centered */
+.hero-media {
+    display: flex;
+    justify-content: center;
 }
 
 .hero h1 {
@@ -126,7 +133,6 @@ body {
 
 .lead {
   font-size: 1.1rem;
-  max-width: 740px;
   opacity: 0.95;
   margin-bottom: 1.4rem;
 }
