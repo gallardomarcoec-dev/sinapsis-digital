@@ -222,7 +222,7 @@ body {
   margin: 0.25rem 0;
 }
 
-/* --- ORGANIGRAM / TEAM STYLES (UPDATED) --- */
+/* --- ORGANIGRAM / TEAM STYLES --- */
 .organigram {
   display: flex;
   flex-direction: column;
@@ -248,11 +248,11 @@ body {
   margin: 0 auto;
 }
 
-/* Contact Info Styling - FIXED to tuck under name */
+/* Contact Info Styling - FIXED TUCK */
 .director-contact {
-  margin-top: 5px; /* Minimal space */
+  margin-top: 5px; 
   padding-top: 0;
-  border-top: none; /* Removed border */
+  border-top: none; 
   font-size: 0.85rem;
   color: var(--white);
   opacity: 0.9;
@@ -265,7 +265,7 @@ body {
   width: 2px;
   height: 2rem;
   background: rgba(255, 255, 255, 0.3);
-  margin-top: 0.5rem; /* Reduced to bring line closer */
+  margin-top: 0.5rem; 
   position: absolute;
   bottom: -2rem;
   left: 50%;
