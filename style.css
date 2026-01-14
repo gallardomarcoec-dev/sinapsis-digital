@@ -222,14 +222,93 @@ body {
   margin: 0.25rem 0;
 }
 
-/* Team - UPDATED for Sub-roles */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-top: 2.2rem;
+/* --- ORGANIGRAM / TEAM STYLES --- */
+.organigram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 100%;
 }
 
+/* Level 1: Marco */
+.org-level-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Special styling for Director Card */
+.director-card {
+  transform: scale(1.05); 
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* Contact Info Styling */
+.director-contact {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: var(--white);
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+/* Visual Connector Line */
+.org-connector {
+  width: 2px;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 1rem;
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Level 2: The Grid for the other 3 */
+.org-level-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+/* T-Shape connector for Level 2 */
+.org-level-2::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 16.66%; 
+  right: 16.66%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  display: block;
+}
+
+/* Vertical lines for Level 2 items */
+.org-level-2 .team-card {
+  position: relative;
+}
+
+.org-level-2 .team-card::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  width: 2px;
+  height: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-50%);
+}
+
+/* Shared Card Styles */
 .team-card {
   text-align: center;
 }
@@ -243,24 +322,27 @@ body {
   border: 3px solid var(--accent-mint);
   background: #fff;
   margin-bottom: 0.9rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .team-card h3 {
   color: var(--accent-mint);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   margin-bottom: 0.35rem;
 }
 
 .role {
   font-weight: bold;
   font-size: 0.95rem;
+  color: var(--white);
 }
 
 .sub-role {
   font-style: italic;
   font-size: 0.85rem;
-  opacity: 0.9;
+  opacity: 0.8;
   margin-top: 0.2rem;
+  color: var(--white);
 }
 
 /* Roadmap */
@@ -399,7 +481,7 @@ body {
   color: var(--violet-secondary);
 }
 
-/* Footer UPDATED for Columns & Locations */
+/* Footer */
 .footer {
   background: var(--violet-secondary);
   color: var(--white);
@@ -559,9 +641,25 @@ body {
   .hero-grid {
     grid-template-columns: 1fr;
   }
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+  
+  /* Update organigram responsive logic */
+  .org-level-2 {
+    grid-template-columns: 1fr; /* Stack into 1 column */
+    gap: 3rem;
   }
+  
+  /* Hide connectors on mobile */
+  .org-connector, 
+  .org-level-2::before, 
+  .org-level-2 .team-card::before {
+    display: none;
+  }
+  
+  .director-card {
+    transform: none;
+    margin-bottom: 1rem;
+  }
+
   .footer-columns {
       flex-direction: column;
       text-align: center;
