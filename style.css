@@ -77,12 +77,14 @@ body {
   font-weight: bold;
 }
 
+/* UPDATED: Bigger Logo */
 .brand img {
   width: 70px;
   height: 70px;
   object-fit: contain;
 }
 
+/* UPDATED: Bigger Text for Logo */
 .brand span {
   font-size: 1.5rem;
 }
@@ -154,6 +156,7 @@ body {
   color: var(--white);
 }
 
+/* UPDATED: Boxed Disclaimer Style */
 .disclaimer {
   margin-top: 2.5rem;
   font-size: 0.95rem;
@@ -169,17 +172,12 @@ body {
   color: var(--accent-mint);
 }
 
-/* Teaser box - UPDATED TO REMOVE GAPS */
+/* Teaser box */
 .teaser {
   background: rgba(255, 255, 255, 0.10);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
-  /* Remove padding so video touches edges */
-  padding: 0; 
-  /* Clip content to borders */
-  overflow: hidden; 
-  /* Add shadow here instead of on video wrapper */
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  padding: 1.2rem;
 }
 
 .teaser-header {
@@ -414,7 +412,7 @@ body {
   color: var(--violet-secondary);
 }
 
-/* Footer */
+/* Footer UPDATED */
 .footer {
   background: var(--violet-secondary);
   color: var(--white);
@@ -428,6 +426,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  /* Added to stack icons above text */
   flex-direction: column; 
 }
 
@@ -436,6 +435,7 @@ body {
   height: auto;
 }
 
+/* New Social Links Styles */
 .social-links {
   display: flex;
   gap: 1.5rem;
@@ -466,21 +466,27 @@ body {
   .hero-grid {
     grid-template-columns: 1fr;
   }
+
   .cards {
     grid-template-columns: 1fr;
   }
+
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .roadmap {
     grid-template-columns: 1fr;
   }
+
   .dua-grid {
     grid-template-columns: 1fr;
   }
+
   .metrics {
     grid-template-columns: 1fr;
   }
+
   .quotes {
     grid-template-columns: 1fr;
   }
