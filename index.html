@@ -1,4 +1,292 @@
-<footer class="footer">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sinapsis Digital – Gamificación educativa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formación práctica, accesible y basada en misiones para docentes con poco tiempo. Proyecto académico UOC.">
+  
+  <meta property="og:title" content="Sinapsis Digital | Gamificación para Docentes">
+  <meta property="og:description" content="¿Alumnos desconectados? Aprende a gamificar tu aula en 5 misiones. Sin teoría densa.">
+  <meta property="og:image" content="images/social-preview.jpg"> 
+  <meta property="og:url" content="https://gallardomarcoec-dev.github.io/sinapsis-digital/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    /* Specific styles for the YouTube Short aspect ratio */
+    .video-wrapper {
+      position: relative;
+      /* 9:16 Portrait Ratio for Shorts */
+      padding-bottom: 177.78%; 
+      height: 0;
+      width: 100%;
+      background: #000;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    /* Restrict width on desktop so it looks like a phone */
+     @media (min-width: 981px) {
+        .teaser { max-width: 350px; margin: 0 auto; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav" aria-label="Menú principal">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="images/logo-sinapsis.png" alt="Logotipo Sinapsis Digital" onerror="this.style.display='none'">
+        <span>Sinapsis Digital</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#proyecto">Proyecto</a>
+        <a href="#curso">Curso</a>
+        <a href="#testimonios">Testimonios</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Gamificación educativa para principiantes</h1>
+        <p class="lead">Formación práctica, accesible y basada en misiones para docentes con poco tiempo.</p>
+
+        <div class="hero-actions">
+          <a class="cta" href="#curso">Explorar el curso</a>
+          <a class="cta ghost" href="#proyecto">Ver la solución</a>
+        </div>
+
+        <p class="disclaimer">
+          ⚠️ <strong>Aviso:</strong> Prototipo académico desarrollado en el marco del Máster Universitario en Educación y TIC (e-learning). Sin fines comerciales.
+        </p>
+      </div>
+
+      <div class="hero-media">
+        <div class="teaser">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/g2E0aHObUBE?rel=0&modestbranding=1&playsinline=1&loop=1&playlist=g2E0aHObUBE" 
+                        title="Teaser Sinapsis Digital - Misión 0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div style="padding: 15px; text-align: center;">
+                 <a class="teaser-cta" href="#curso">👇 Comienza tu Misión 0</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="equipo" class="section section-dark">
+    <div class="container">
+      <h2>El equipo</h2>
+      <p class="section-intro">
+        Un equipo multidisciplinar que integra dirección de proyecto, diseño tecnopedagógico, multimedia y gestión de plataformas.
+      </p>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <img src="images/sebastian.jpg" alt="Sebastian Gallardo" loading="lazy">
+          <h3>Sebastian Gallardo</h3>
+          <p class="role">Dirección del Proyecto</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/ana.jpg" alt="Ana Blanca Fernández" loading="lazy">
+          <h3>Ana Blanca Fernández</h3>
+          <p class="role">Gestión de Plataformas y Evaluación</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/juliana.jpg" alt="Juliana Bonilla" loading="lazy">
+          <h3>Juliana Bonilla</h3>
+          <p class="role">Diseño Gráfico y Multimedia</p>
+        </article>
+
+        <article class="team-card">
+          <img src="images/irene.jpg" alt="Irene Gallardo" loading="lazy">
+          <h3>Irene Gallardo</h3>
+          <p class="role">Metodologías Activas</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyecto" class="section section-light">
+    <div class="container">
+      <h2>El proyecto</h2>
+      <p class="section-intro">
+        La propuesta responde a la desconexión del alumnado y a la sobrecarga docente mediante una ruta gamificada, breve y aplicable.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Problema</h3>
+          <p>Desmotivación, fatiga digital y falta de tiempo para diseñar experiencias activas de forma sostenible.</p>
+          <ul>
+            <li>Ansiedad digital</li>
+            <li>Escasez de tiempo</li>
+            <li>Recursos dispersos</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Solución</h3>
+          <p>Microlearning gamificado con misiones, evidencias progresivas y orientación a la implementación en el aula.</p>
+          <ul>
+            <li>Misiones y progreso</li>
+            <li>Plantillas reutilizables</li>
+            <li>Transferencia inmediata</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Evidencia académica</h3>
+          <p>El prototipo permite justificar decisiones pedagógicas y de UX con marcos como ADDIE y principios de accesibilidad.</p>
+          <ul>
+            <li>Análisis y diseño coherentes</li>
+            <li>Isomorfismo pedagógico</li>
+            <li>Evaluación visible</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="curso" class="section section-dark">
+    <div class="container">
+      <h2>El curso</h2>
+      <p class="section-intro">
+        Una ruta de 5 misiones desde “Novato” hasta “Master”, orientada a la práctica y con accesibilidad integrada (DUA).
+      </p>
+
+      <div class="roadmap">
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 1</span>
+            <span class="level">Novato</span>
+          </div>
+          <h3>Fundamentos</h3>
+          <p>Comprender gamificación educativa sin complicaciones: objetivos, mecánicas y errores comunes.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 2</span>
+            <span class="level">Aprendiz</span>
+          </div>
+          <h3>Casos reales</h3>
+          <p>Analizar ejemplos breves y extraer patrones transferibles para el aula y la evaluación.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 3</span>
+            <span class="level">Diseñador</span>
+          </div>
+          <h3>Diseño de retos</h3>
+          <p>Convertir resultados de aprendizaje en misiones claras, con evidencias y retroalimentación.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 4</span>
+            <span class="level">Implementador</span>
+          </div>
+          <h3>Implementación</h3>
+          <p>Aplicar el diseño en el aula con una estructura realista, ajustable y sostenible.</p>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top">
+            <span class="badge">Misión 5</span>
+            <span class="level">Master</span>
+          </div>
+          <h3>Evaluación y transferencia</h3>
+          <p>Medir impacto, capturar evidencias y planificar la mejora continua sin aumentar la carga docente.</p>
+        </article>
+      </div>
+
+      <div class="dua">
+        <h3>DUA en el producto (no como checklist)</h3>
+        <div class="dua-grid">
+          <div class="dua-item">
+            <h4>Acceso flexible</h4>
+            <p>Microcontenidos y navegación simple, mobile-first y compatible con plataformas ligeras.</p>
+          </div>
+          <div class="dua-item">
+            <h4>Percepción</h4>
+            <p>Subtítulos, transcripciones y diseño de alto contraste para mejorar la comprensión.</p>
+          </div>
+          <div class="dua-item">
+            <h4>Acción y expresión</h4>
+            <p>Plantillas, ejemplos y opciones de entrega que permiten diferentes formas de demostrar aprendizaje.</p>
+          </div>
+          <div class="dua-item">
+            <h4>Motivación</h4>
+            <p>Misiones, progreso y recompensas simbólicas para sostener el compromiso con poco tiempo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="section section-light">
+    <div class="container">
+      <h2>Testimonios</h2>
+      <p class="section-intro">
+        Evidencias simuladas para ilustrar el tipo de impacto esperado y la transferencia a la práctica docente.
+      </p>
+
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-number">85%</span>
+          <span class="metric-label">Objetivo de finalización</span>
+        </div>
+        <div class="metric">
+          <span class="metric-number">5</span>
+          <span class="metric-label">Misiones breves</span>
+        </div>
+        <div class="metric">
+          <span class="metric-number">15–20 min</span>
+          <span class="metric-label">Tiempo por micro-misión</span>
+        </div>
+      </div>
+
+      <div class="quotes">
+        <article class="quote">
+          <p>“La estructura por misiones me permitió implementar gamificación sin sentirme desbordada.”</p>
+          <span>Docente de secundaria</span>
+        </article>
+
+        <article class="quote">
+          <p>“Lo mejor es que no exige herramientas complejas. En una semana ya tenía un reto listo.”</p>
+          <span>Profesora de formación profesional</span>
+        </article>
+
+        <article class="quote">
+          <p>“El enfoque DUA se nota en la práctica: opciones claras, ritmo flexible y material reutilizable.”</p>
+          <span>Docente de primaria</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
     <div class="container footer-inner">
       
       <div class="contact-info" style="margin-bottom: 1.5rem; opacity: 0.9;">
@@ -40,3 +328,6 @@
       </p>
     </div>
   </footer>
+
+</body>
+</html>
